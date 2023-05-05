@@ -17,7 +17,7 @@
 
 
 <h1>
-  SDataset: SMC Story Metadata
+  Dataset: SMC Story Metadata
 </h1>
 
 ## About <a name = "about"></a>
