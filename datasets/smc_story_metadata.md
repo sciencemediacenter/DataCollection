@@ -31,22 +31,31 @@ For a general overview of how to query the data, you can find help [here](../REA
 
 **Field ID:** smc_story_meta
 
-```json
+```JSON
       {
-        "story_no": 00000 // 5-digit unique story number, first 2 digits is the current year: 2023=23000
-        "title": "" // Story title
-        "type": "" // Story type, e.g. "Research In Context"
-        "publication_date": "2020-01-01" // Publication date, format YYYY-MM-DD 
-        "ressort": "" // Ressort
-        "url": "" // URL to the story on sciencemediacenter.de
+        "story_no": 23000,
+        "title": "",
+        "type": "",
+        "publication_date": "2020-01-01", 
+        "ressort": "",
+        "url": "",
       },
 ```
+
+| Field | Description |
+| --- | --- |
+| story_no | 5-digit unique story number; first 2 digits contain the year: 2023 -> 23xxx |
+| title | Story title |
+| type | Story type, e.g "Research In Context" |
+| publication_date | Publication date in format YYYY-MM-DD |
+| ressort | Ressort in which the story was listed |
+| url | URL to the story on sciencemediacenter.de |
 
 ## Example Query
 
 *Get all Storys for the Year 2023 in descending order*
 
-```json
+```GraphQL
 query SearchQuery {
   smc_story_meta(where: {story_no: {_gt: 23000}}, order_by: {story_no: desc}) {
     publication_date
@@ -57,6 +66,4 @@ query SearchQuery {
     url
   }
 }
-
-
 ```
