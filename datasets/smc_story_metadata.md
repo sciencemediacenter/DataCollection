@@ -67,3 +67,6 @@ query SearchQuery {
   }
 }
 ```
+
+## Licence
+
