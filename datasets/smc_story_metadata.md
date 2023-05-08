@@ -70,3 +70,4 @@ query SearchQuery {
 
 ## Licence
 
+This dataset is licensed under GPL-3 and a copy of this license is included in the repository. 

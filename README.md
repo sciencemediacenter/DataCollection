@@ -66,4 +66,4 @@ You can also follow us on [Twitter](https://twitter.com/smc_germany_lab?lang=de)
 
 ## Licence <a name = "licence"></a>
 
-All datasets are licensed under GPL-3 and a copy of this license is included in the repository. 
+The datasets in this repository may be subject to different licenses. Please refer to the "License" section in the respective dataset overview page.
