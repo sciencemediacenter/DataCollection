@@ -29,6 +29,14 @@
 
 ## About <a name = "about"></a>
 
+Under the term "Augmented Science Journalism", the *Science Media Center Lab* has set itself the goal of advocating for the technological enhancement, expansion and improvement of science journalism.
+
+In this repository you will find in the future all datasets that were either collected and created by the Science Media Center itself, as well as curated datasets that were selected by the SMC Lab.
+
+The goal is to enable further use of these data by third parties as well as to create transparency for (data) products of the Science Media Center.
+
+The Science Media Center Lab is part of the [Science Media Center Germany](https://sciencemediacenter.de). 
+
 ## Access <a name = "access"></a>
 
 Access to all our datasets is via a [GraphQL](https://graphql.org/) (powered by [Hasura](https://hasura.io/)) endpoint and corresponding queries.
