@@ -51,6 +51,16 @@ For a general overview of how to query the data, you can find help [here](../REA
 | ressort | Ressort in which the story was listed |
 | url | URL to the story on sciencemediacenter.de |
 
+A description of the different story types can be found [here](https://www.sciencemediacenter.de/en/our-offers/types-of-product/). Note that the type "Data Report" is not yet included in this dataset. 
+The resoorts are: 
+
+- Medicine and Life Sciences (Medizin und Lebenswissenschaften)
+- Climate and environment (Klima und Umwelt)
+- Energy and mobility (Energie und Mobilität)
+- Digital and technology (Digitales und Technologie)
+
+To use the ressorts within a query you need to use the german terms. 
+
 ## Example Query
 
 *Get all Storys for the Year 2023 in descending order*
