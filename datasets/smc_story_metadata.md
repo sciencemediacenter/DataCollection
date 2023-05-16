@@ -52,7 +52,7 @@ For a general overview of how to query the data, you can find help [here](../REA
 | url | URL to the story on sciencemediacenter.de |
 
 A description of the different story types can be found [here](https://www.sciencemediacenter.de/en/our-offers/types-of-product/). Note that the type "Data Report" is not yet included in this dataset. 
-The resoorts are: 
+The ressorts are: 
 
 - Medicine and Life Sciences (Medizin und Lebenswissenschaften)
 - Climate and environment (Klima und Umwelt)
