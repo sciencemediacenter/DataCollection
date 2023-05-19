@@ -75,4 +75,4 @@ You can also follow us on [Twitter](https://twitter.com/smc_germany_lab?lang=de)
 
 ## Licence <a name = "licence"></a>
 
-The datasets in this repository may be subject to different licenses. Please refer to the "License" section in the respective dataset overview page.
+The datasets in this repository may be subject to different licenses. Please refer to the "Licence" section in the respective dataset overview page.
