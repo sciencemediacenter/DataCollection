@@ -29,7 +29,7 @@
 
 ## About <a name = "about"></a>
 
-Under the term "Augmented Science Journalism", the *Science Media Center Lab* has set itself the goal of advocating for the technological enhancement, expansion and improvement of science journalism.
+The Science Media Center Lab is committed to the technological advancement of science journalism in the sense of _Augmented Science Journalism_.
 
 In this repository you will find in the future all datasets that were either collected and created by the Science Media Center itself, as well as curated datasets that were selected by the SMC Lab.
 
