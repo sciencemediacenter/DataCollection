@@ -54,7 +54,7 @@ For a general overview of how to query the data, you can find help [here](../REA
 
 ```GraphQL
 query MyQuery {
-  ds_gasspeicher_agsi_gas_storage_by_country {
+  data_agsi_gasspeicher_gas_storage_by_country {
     working_gas_volume
     withdrawal_capacity
     withdrawal
