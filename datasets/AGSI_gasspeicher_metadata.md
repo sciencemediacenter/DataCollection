@@ -118,4 +118,4 @@ daily_facility_data <-
 
 ## Licence
 
-It is mandatory to credit or mention to GIE (Gas Infrastructure Europe) or AGSI as data source when using or repackaging this data. 
+It is mandatory to credit or mention to GIE (Gas Infrastructure Europe) and AGSI as data source when using or repackaging this data. 
