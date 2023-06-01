@@ -81,8 +81,10 @@ To use the ressorts within a query you need to use the german terms.
 | contact_id | Unique Hash for every expert |
 | expert_name | Full name with formal titles of an expert |
 | expert_affliliation | Experts affiliation at the time of the story |
-| question | Question to which the statement was refering to. This is mostly the case for Science Response and Press Briefing Story-Types. Please keep in mind, that the allocation can be buggy in some cases. If there is no question, this field is null. If you need a full statement and context from a Press Briefing, please look for the full transcripts at the Science Media Center Webpage |
+| question | Question to which the statement was refering to. This is mostly the case for Science Response and Press Briefing story types. If there is no question, this field is null. |
 | statement | Actual statement of the expert  |
+
+The allocation of statements to questions can be buggy in some cases, mostly for Press Briefings. If you are in need of the full context of a statement, please look for the story at the Science Media Center Webpage.
 
 ## Example Query
 
