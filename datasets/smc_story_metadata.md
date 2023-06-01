@@ -61,6 +61,29 @@ The ressorts are:
 
 To use the ressorts within a query you need to use the german terms. 
 
+
+**Field ID:** smc_story_expert_statements
+
+```JSON
+      {
+        "story_no": 22053
+        "contact_id": "",
+        "expert_name": "",
+        "expert_affiliation": "",
+        "question": "" or null,
+        "statement": "",
+      },
+```
+
+| Field | Description |
+| --- | --- |
+| story_no | 5-digit unique story number; first 2 digits contain the year: 2023 -> 23xxx |
+| contact_id | Unique Hash for every expert |
+| expert_name | Full name with formal titles of an expert |
+| expert_affliliation | Experts affiliation at the time of the story |
+| question | Question to which the statement was refering to. This is mostly the case for Science Response and Press Briefing Story-Types. Please keep in mind, that the allocation can be buggy in some cases  |
+| statement | Actual statement of the expert  |
+
 ## Example Query
 
 *Get all Storys for the Year 2023 in descending order*
