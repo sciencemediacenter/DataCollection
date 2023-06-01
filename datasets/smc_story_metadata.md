@@ -17,12 +17,12 @@
 
 
 <h1>
-  Dataset: SMC Story Metadata
+  Dataset: SMC Story Data
 </h1>
 
 ## About <a name = "about"></a>
 
-This dataset contains the basic metadata for all stories of the Science Media Center.
+This dataset contains the basic metadata  and content for all stories of the Science Media Center.
 ## Access <a name = "access"></a>
 
 For a general overview of how to query the data, you can find help [here](../README.md)
