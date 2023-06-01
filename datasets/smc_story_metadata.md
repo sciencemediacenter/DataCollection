@@ -70,7 +70,7 @@ To use the ressorts within a query you need to use the german terms.
         "contact_id": "",
         "expert_name": "",
         "expert_affiliation": "",
-        "question": "" or null,
+        "question": "",
         "statement": "",
       },
 ```
@@ -81,7 +81,7 @@ To use the ressorts within a query you need to use the german terms.
 | contact_id | Unique Hash for every expert |
 | expert_name | Full name with formal titles of an expert |
 | expert_affliliation | Experts affiliation at the time of the story |
-| question | Question to which the statement was refering to. This is mostly the case for Science Response and Press Briefing Story-Types. Please keep in mind, that the allocation can be buggy in some cases  |
+| question | Question to which the statement was refering to. This is mostly the case for Science Response and Press Briefing Story-Types. Please keep in mind, that the allocation can be buggy in some cases. If there is no question, this field is null.  |
 | statement | Actual statement of the expert  |
 
 ## Example Query
