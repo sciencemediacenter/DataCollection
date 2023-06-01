@@ -103,6 +103,26 @@ query SearchQuery {
 }
 ```
 
+*Get all data for story 23002*
+
+```GraphQL
+query SearchQuery {
+  smc_story_meta(where: {story_no: {_eq: 23002}}) {
+    type
+    title
+    story_no
+    expert_statements {
+      statement
+      question
+      expert_name
+      contact_id
+      story_no
+      expert_affiliation
+    }
+  }
+}
+```
+
 ## Licence
 
 This dataset is licensed under GPL-3 and a copy of this license is included in the repository. 
