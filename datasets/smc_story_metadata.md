@@ -86,6 +86,20 @@ To use the ressorts within a query you need to use the german terms.
 
 The allocation of statements to questions can be buggy in some cases, mostly for Press Briefings. If you are in need of the full context of a statement, please look for the story at the Science Media Center Webpage.
 
+**Field ID:** smc_story_smc_content
+
+```JSON
+      {
+        "story_no": 22053
+        "teaser": ""
+      },
+```
+
+| Field | Description |
+| --- | --- |
+| story_no | 5-digit unique story number; first 2 digits contain the year: 2023 -> 23xxx |
+| teaser | Teaser for the story |
+
 ## Example Query
 
 *Get all Storys for the Year 2023 in descending order*
@@ -118,6 +132,9 @@ query SearchQuery {
       contact_id
       story_no
       expert_affiliation
+    }
+    smc_content {
+      teaser
     }
   }
 }
