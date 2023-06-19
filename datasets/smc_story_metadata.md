@@ -17,12 +17,12 @@
 
 
 <h1>
-  Dataset: SMC Story Metadata
+  Dataset: SMC Story Data
 </h1>
 
 ## About <a name = "about"></a>
 
-This dataset contains the basic metadata for all stories of the Science Media Center.
+This dataset contains the basic metadata  and content for all stories of the Science Media Center.
 ## Access <a name = "access"></a>
 
 For a general overview of how to query the data, you can find help [here](../README.md)
@@ -61,6 +61,45 @@ The ressorts are:
 
 To use the ressorts within a query you need to use the german terms. 
 
+
+**Field ID:** smc_story_expert_statements
+
+```JSON
+      {
+        "story_no": 22053
+        "contact_id": "",
+        "expert_name": "",
+        "expert_affiliation": "",
+        "question": "",
+        "statement": "",
+      },
+```
+
+| Field | Description |
+| --- | --- |
+| story_no | 5-digit unique story number; first 2 digits contain the year: 2023 -> 23xxx |
+| contact_id | Unique Hash for every expert |
+| expert_name | Full name with formal titles of an expert |
+| expert_affliliation | Experts affiliation at the time of the story |
+| question | Question to which the statement was refering to. This is mostly the case for Science Response and Press Briefing story types. If there is no question, this field is null. |
+| statement | Actual statement of the expert  |
+
+The allocation of statements to questions can be buggy in some cases, mostly for Press Briefings. If you are in need of the full context of a statement, please look for the story at the Science Media Center Webpage.
+
+**Field ID:** smc_story_smc_content
+
+```JSON
+      {
+        "story_no": 22053
+        "teaser": ""
+      },
+```
+
+| Field | Description |
+| --- | --- |
+| story_no | 5-digit unique story number; first 2 digits contain the year: 2023 -> 23xxx |
+| teaser | Teaser for the story |
+
 ## Example Query
 
 *Get all Storys for the Year 2023 in descending order*
@@ -74,6 +113,29 @@ query SearchQuery {
     title
     type
     url
+  }
+}
+```
+
+*Get all data for story 23002*
+
+```GraphQL
+query SearchQuery {
+  smc_story_meta(where: {story_no: {_eq: 23002}}) {
+    type
+    title
+    story_no
+    expert_statements {
+      statement
+      question
+      expert_name
+      contact_id
+      story_no
+      expert_affiliation
+    }
+    smc_content {
+      teaser
+    }
   }
 }
 ```

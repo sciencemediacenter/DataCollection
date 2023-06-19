@@ -60,7 +60,7 @@ Or just simply search for a "graphql playground" in your favorite search engine.
 
 ## Current Datasets  <a name = "datasets"></a>
 
-* [SMC Story Metadata](datasets/smc_story_metadata.md)
+* [SMC Story Data](datasets/smc_story_metadata.md)
 * [Aggregated Gas Storage Inventory](datasets/AGSI_gasspeicher_metadata.md)
 
 ## Contact <a name = "contact"></a>
