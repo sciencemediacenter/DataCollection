@@ -2,9 +2,9 @@
 
 
 ## About <a name = "about"></a>
-Der Datensatz dient unter anderem als Grundlage für diesen Data Report. Er besteht zum einen Teil aus Daten des [Marktstammdatenregisters](https://www.marktstammdatenregister.de/MaStR){target="_blank"} und zum anderen Teil aus
-den [Ausschreibungsergebnissen](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html){target="_blank"} der Bundesnetzagentur. 
-Das Marktstammdatenregister ist eine von der Bundesnetzagentur geführte Datenbank zur Erfassung und Verwaltung von Informationen über alle Akteure und Anlagen im deutschen Strom- und Gasmarkt. Die Einträge erfolgen dabei von den Akteuren und Anlagenbetreibern in Eigenverantwortung selbst. Der Zugriff auf die Daten des Marktstammdatenregisters erfolgt über das [open MaStR Paket](https://github.com/OpenEnergyPlatform/open-MaStR){target="_blank"} des Rainer Lemoine Instituts. Unsere Abbild wird wöchentlich aktualisiert. Die Daten zu den Ausschreibungsergebnissen werden aus den von der Bundesnetzargentur veröffentlichten [.csv Dateien](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html){target="_blank"} extrahiert. Die Daten werden immer nach bekanntgabe der Zuschläge aktualisiert.
+Der Datensatz dient unter anderem als Grundlage für den [Data Report "Das Wind-Ausbauziel für 2024"](https://www.sciencemediacenter.de/alle-angebote/data-report/details/news/das-wind-ausbauziel-fuer-2024/). Er besteht zum einen Teil aus Daten des [Marktstammdatenregisters](https://www.marktstammdatenregister.de/MaStR) und zum anderen Teil aus
+den [Ausschreibungsergebnissen](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html) der Bundesnetzagentur. 
+Das Marktstammdatenregister ist eine von der Bundesnetzagentur geführte Datenbank zur Erfassung und Verwaltung von Informationen über alle Akteure und Anlagen im deutschen Strom- und Gasmarkt. Die Einträge erfolgen dabei von den Akteuren und Anlagenbetreibern in Eigenverantwortung selbst. Der Zugriff auf die Daten des Marktstammdatenregisters erfolgt über das [open MaStR Paket](https://github.com/OpenEnergyPlatform/open-MaStR) des Rainer Lemoine Instituts. Unsere Abbild wird unregelmäßig aktualisiert. Die Daten zu den Ausschreibungsergebnissen werden aus den von der Bundesnetzargentur veröffentlichten [.csv Dateien](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html) extrahiert. Die Daten werden immer nach bekanntgabe der Zuschläge aktualisiert.
 
 
 ## Access <a name = "access"></a>
@@ -20,7 +20,7 @@ Folgende Tabellen sind relevant:
 Sie können alle über die MastrNummer miteinander verknüpft werden.
 
 ### data_marktstammdaten_wind_extended
-Dies ist eine Kopie der Tabelle `wind_extended` aus dem Marktstammdatenregister. Hier sind alle Grundinformationen zu den Windkraftanlagen enthalten. Die Daten werden wöchentlich aktualisiert.
+Dies ist eine Auswahl aus der Tabelle `wind_extended` aus dem Marktstammdatenregister. Hier sind alle Grundinformationen zu den Windkraftanlagen enthalten.
 
 ```GraphQL
 query MyQuery {
@@ -50,7 +50,7 @@ query MyQuery {
       },
 ```
 ### data_marktstammdaten_permits_units
-Diese Tabelle basiert auf der Tabelle `permits_units` aus dem Marktstammdatenregister. In der Originaltabelle sind Genehmigungen für mehrere Einheiten zusammengefasst sind. In dieser Version entspricht jede Zeile einer Einheit. Die Daten werden wöchentlich aktualisiert.
+Diese Tabelle basiert auf der Tabelle `permits_units` aus dem Marktstammdatenregister. In der Originaltabelle sind Genehmigungen für mehrere Einheiten zusammengefasst sind. In dieser Version entspricht jede Zeile einer Einheit.
 
 ```GraphQL
 query MyQuery {
@@ -74,7 +74,7 @@ query MyQuery {
 ```
 
 ### data_marktstammdaten_tenders_bnetza
-Diese Tabelle sind die Daten zu den Ausschreibungen der Bundesnetzagentur enthalten. Diese werden aus den von der Bundesnetzargentur veröffentlichten [.csv Dateien](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html){target="_blank"} extrahiert. Die Daten werden immer nach bekanntgabe der Zuschläge aktualisiert.
+Diese Tabelle sind die Daten zu den Ausschreibungen der Bundesnetzagentur enthalten. Diese werden aus den von der Bundesnetzargentur veröffentlichten [.csv Dateien](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html){target="_blank"} extrahiert.
 
 ```GraphQL
 query MyQuery {
@@ -94,7 +94,7 @@ query MyQuery {
 ```
 
 ### data_marktstammdaten_tenders_eeg
-Diese Tabelle ist ein Abbild der Tabelle `tenders_eeg` aus dem Marktstammdatenregister. Hier sind die Ausschreibungsdaten von bereits gebauten Anlagen enthalten. Diese Daten werden wöchentlich aktualisiert.
+Diese Tabelle ist ein Abbild der Tabelle `tenders_eeg` aus dem Marktstammdatenregister. Hier sind die Ausschreibungsdaten von bereits gebauten Anlagen enthalten.
 
 ```GraphQL
 query MyQuery {
