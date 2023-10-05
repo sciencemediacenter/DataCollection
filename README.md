@@ -63,6 +63,8 @@ Or just simply search for a "graphql playground" in your favorite search engine.
 * [SMC Story Data](datasets/smc_story_metadata.md)
 * [Aggregated Gas Storage Inventory](datasets/AGSI_gasspeicher_metadata.md)
 * [Windkraft an Land](datasets/Windkraft_metadata.md)
+* [ENTSO-E Stromdaten](datasets/ENTSOE_stromdaten_metadata.md)
+
 ## Contact <a name = "contact"></a>
 
 You want to contact us ? Great! The best way to reach us is via e-mail. 
