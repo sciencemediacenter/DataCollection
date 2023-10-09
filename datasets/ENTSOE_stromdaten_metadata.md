@@ -1,9 +1,9 @@
-# Dataset: ENTSOE Transpacancy Platform
+# Dataset: ENTSO-E Transpacancy Platform
 
 
 ## About <a name = "about"></a>
 
-The dataset contains two derived tables from the [ENTSOE Transparency Platform](https://transparency.entsoe.eu/) for generation and load data in Germany. In `generation` the generation and the consumption of all different generation types are recorded for every quarter hour since 2015-01-01. The table `load` contains the load values for the German power grid for every quarter hour since 2015-01-01. Note that the timestamps are UTC timestamps in both tables. These records are updated daily, but only data from the last 14 days are updated. Changes made further back in time are not applied by default and are only updated sporadically. 
+The dataset contains two derived tables from the [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/) for generation and load data in Germany. In `generation` the generation and the consumption of all different generation types are recorded for every quarter hour since 2015-01-01. The table `load` contains the load values for the German power grid for every quarter hour since 2015-01-01. Note that the timestamps are UTC timestamps in both tables. These records are updated daily, but only data from the last 14 days are updated. Changes made further back in time are not applied by default and are only updated sporadically. 
 
 ## Access <a name = "access"></a>
 
