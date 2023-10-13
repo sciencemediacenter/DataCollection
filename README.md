@@ -64,6 +64,7 @@ Or just simply search for a "graphql playground" in your favorite search engine.
 * [Aggregated Gas Storage Inventory](datasets/AGSI_gasspeicher_metadata.md)
 * [Windkraft an Land](datasets/Windkraft_metadata.md)
 * [ENTSO-E Stromdaten](datasets/ENTSOE_stromdaten_metadata.md)
+* [Preprint Recommender](datasets/Preprint_recommender_metadata.md)
 
 ## Contact <a name = "contact"></a>
 
