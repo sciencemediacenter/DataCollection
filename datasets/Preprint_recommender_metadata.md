@@ -5,11 +5,12 @@
 
 This data offering is intended to make it easier to find potentially relevant publications among the preprints published daily on [bioRxiv](https://www.biorxiv.org/) and [medRxiv](https://www.medrxiv.org/). To this end, the SMC monitors usage statistics published by the preprint servers for each preprint published on the two servers for the first seven days after initial publication. In addition, bi-monthly thresholds are calculated for all usage statistics and all days in the first week so that only 1% of published preprints per measure exceed these thresholds.
 
-The dataset contains three tables. 
+The dataset contains four tables. 
 
 * **biomedrxiv_versions** contains the metadata of the preprints. After the observation period, this data is not updated and multiple versions of a preprint are not captured. For complete lists, it is recommended to use the API of bioRxiv and medRxiv.
 * **biomedrxiv_earlyuserstats** contains usage statistics for the first seven days after the release of the first version. As a rule, many measurement figures are still missing on the preprint server page on the first two days after publication. Problems in retrieving the data may cause it to change the time of retrieval. Other missing data are not uncommon.
 * **biomedrxiv_thresholds** contains the thresholds recalculated every two months for all retrieval statistics and the first seven days after initial publication. To identify noticeable preprints in the usage statistics, these thresholds can be compared with the values in biomedrxiv_earlyuserstats. The threshold calculation will be further optimized so that these values can also change subsequently.
+* **biomedrxiv_recommendations** contains the meta-information on the preprints that became noticeable in the recommender. The data set is not always systematically updated when the recommending method is changed. It is not suitable as a research dataset, but it provides an overview of conspicuous preprints over time and is updated several times a day. Preprints are contained multiple times in the data set if several metrics are above the threshold.
 
 The records are updated twice a day.
 
@@ -69,6 +70,18 @@ For a general overview of how to query the data, you can find help [here](../REA
       },
 ```
 
+**Field ID:** data_preprint_recommender_biomedrxiv_recommendations
+
+```JSON
+      {
+        "day": 2,
+        "doi": "10.1101/2020.03.31.016972",
+        "metric": "altmetric",
+        "preprint_date": "2020-04-01",
+        "value": 89
+      },
+```
+
 ## Example Query
 
 ```GraphQL
@@ -112,6 +125,19 @@ query MyQuery {
     title
     type
     version
+    abstract
+  }
+}
+```
+
+```GraphQL
+query MyQuery {
+  data_preprint_recommender_biomedrxiv_recommendations {
+    day
+    doi
+    metric
+    preprint_date
+    value
   }
 }
 ```
@@ -138,7 +164,15 @@ biomedrxiv_versions <-
     GraphQL_get_table_vec(
     tabellenname = "data_preprint_recommender_biomedrxiv_versions", 
     variablen = c("author_corresponding", "author_corresponding_institution", "authors", 
-                  "category", "date", "doi", "license", "server", "title", "type", "version"), 
+                  "category", "date", "doi", "license", "server", "title", "type", "version", "abstract"), 
+    datenserver = "https://data.smclab.io/v1/graphql"
+    )
+
+biomedrxiv_recommendations <-
+    GraphQL_get_table_vec(
+    tabellenname = "data_preprint_recommender_biomedrxiv_recommendations", 
+    variablen = c("day", "doi", "metric", 
+                  "preprint_date", "value"), 
     datenserver = "https://data.smclab.io/v1/graphql"
     )
 
@@ -147,5 +181,5 @@ biomedrxiv_versions <-
 ## Licence
 
 
-biomedrxiv_thresholds and biomedrxiv_earlyuserstats are subject to GPL-3, biomedrxiv_versions contains a variable licence with license information
+biomedrxiv_thresholds, biomedrxiv_recommendations and biomedrxiv_earlyuserstats are subject to GPL-3, biomedrxiv_versions contains a variable licence with license information
 
