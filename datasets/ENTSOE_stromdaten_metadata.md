@@ -1,6 +1,5 @@
 # Dataset: ENTSO-E Transpacancy Platform
 
-
 ## About <a name = "about"></a>
 
 The dataset contains two derived tables from the [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/) for generation and load data in Germany. In `generation` the generation and the consumption of all different generation types are recorded for every quarter hour since 2015-01-01. The table `load` contains the load values for the German power grid for every quarter hour since 2015-01-01. Note that the timestamps are UTC timestamps in both tables. These records are updated daily, but only data from the last 14 days are updated. Changes made further back in time are not applied by default and are only updated sporadically. 
@@ -11,17 +10,6 @@ For a general overview of how to query the data, you can find help [here](../REA
 
 ## Field and variables
 
-**Field ID:** generation
-
-```JSON
-      {
-        "timestamp": "2017-12-04T21:15:00",
-        "generation_type": "Fossil Gas",
-        "generation": 3073,
-        "consumption": 1
-      }
-```
-
 **Field ID:** load
 
 ```JSON
@@ -30,6 +18,19 @@ For a general overview of how to query the data, you can find help [here](../REA
         "timestamp": "2015-12-17T20:15:00"
       }
 ```
+
+**Field ID:** generation
+
+```JSON
+      {
+        "consumption": 0,
+        "generation": 15859,
+        "generation_type": "Fossil Brown coal/Lignite",
+        "timestamp": "2014-12-31T23:00:00"
+      }
+```
+
+
 
 ## Example Query
 
@@ -44,11 +45,11 @@ query MyQuery {
 
 ```GraphQL
 query MyQuery {
-   data_entsoe_stromdaten_generation(order_by: {timestamp: desc}, limit: 10) {
-    timestamp
-    generation_type
-    generation
+  data_entsoe_stromdaten_generation {
     consumption
+    generation
+    generation_type
+    timestamp
   }
 }
 ```

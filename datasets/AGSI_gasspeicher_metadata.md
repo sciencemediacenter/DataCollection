@@ -1,6 +1,5 @@
 # Dataset: Aggregated Gas Storage Inventory
 
-
 ## About <a name = "about"></a>
 
 The dataset contains two derived tables from the [Aggregated Gas Storage Inventory (AGSI)](https://agsi.gie.eu/). In `gas_storage_by_country` the storage data is recorded by country, in `gas_storage_by_facility` by individual storage facility. Details can be found on the [GIE](https://agsi.gie.eu/) page. These records are updated daily, but only data from the last 14 days are updated. Changes made further back in time are not applied by default and are only updated sporadically.
