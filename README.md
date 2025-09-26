@@ -63,6 +63,7 @@ Or just simply search for a "graphql playground" in your favorite search engine.
 * [SMC Story Data](datasets/smc_story_metadata.md)
 * [Aggregated Gas Storage Inventory](datasets/AGSI_gasspeicher_metadata.md)
 * [BNetzA gas data](datasets/BNetzA_gas_metadata.md)
+* [Energy charts data](datasets/Energy_charts_metadata.md)
 * [NRW hospital planning](datasets/NRW_krankenhausreform_metadata.md)
 * [Population forecasts](datasets/Bevoelkerungsprognosen_metadata.md)
 * [Windkraft an Land](datasets/Windkraft_metadata.md)
