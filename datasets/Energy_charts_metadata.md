@@ -1,6 +1,5 @@
 # Dataset: BNetzA gas data
 
-
 ## About <a name = "about"></a>
 
 The data set contains one table that contains the installed power according to [Energy Charts](https://energy-charts.info/charts/installed_power/chart.htm?l=en&c=DE). `charts_installierte_leistung` contains monthly figures of installed capacity for different energy sources in Germany.
@@ -29,7 +28,6 @@ query MyQuery {
     capacity
   }
 }
-
 ```
 
 ```R

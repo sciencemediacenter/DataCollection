@@ -1,6 +1,5 @@
 # Dataset: BNetzA gas data
 
-
 ## About <a name = "about"></a>
 
 The data set contains two tables that summarize selected data from the [Bundesnetzagentur daily situation reports](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Versorgungssicherheit/aktuelle_gasversorgung/start.html). `gas_import_export` contains daily figures on import and export volumes as well as domestic gas production. `gas_verbrauch` contains weekly consumption data broken down into small and large consumers. Average values for the period 2018-2021 are also provided.
