@@ -48,4 +48,4 @@ energy_charts_installierte_leistung <-
 
 ## Licence
 
-The data obtained via [Energy-Charts API](https://api.energy-charts.info/) are licensed under Creative Commons license [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+The data obtained via [Energy-Charts API](https://api.energy-charts.info/) are licensed under Creative Commons license [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Proper attribution to Energy-Charts.info as the source is required.
