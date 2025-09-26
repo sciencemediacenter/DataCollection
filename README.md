@@ -79,8 +79,6 @@ You want to contact us ? Great! The best way to reach us is via e-mail.
 lab@sciencemediacenter.de
 ```
 
-You can also follow us on [Twitter](https://twitter.com/smc_germany_lab?lang=de). There you will also get all updates and information about other projects of the SMC Lab.
-
 ## Licence <a name = "licence"></a>
 
 The datasets in this repository may be subject to different licenses. Please refer to the "Licence" section in the respective dataset overview page.
