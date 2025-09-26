@@ -48,4 +48,4 @@ energy_charts_installierte_leistung <-
 
 ## Licence
 
-The Bundesnetzagentur has published the data under [CC BY-ND 4.0 Deed](https://creativecommons.org/licenses/by-nd/4.0/deed.de).
+The data obtained via [Energy-Charts API](https://api.energy-charts.info/) are licensed under Creative Commons license [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
