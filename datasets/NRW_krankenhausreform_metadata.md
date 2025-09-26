@@ -243,4 +243,4 @@ fahrzeiten_allgemeine_innere_medizin <- GraphQL_get_table_vec(
 
 ## Licence
 
-It is mandatory to credit or mention to GIE (Gas Infrastructure Europe) and AGSI as data source when using or repackaging this data. 
+The driving times stem from Tim Holthaus (Lehrstuhl für Güterverkehr und Transportlogistik an der Universität Wuppertal). The community boundary are obtained from Bundesamt für Kartographie und Geodäsie (BKG) and made available under [Datenlizenz Deutschland – Namensnennung – Version 2.0](https://www.govdata.de/dl-de/by-2-0).
