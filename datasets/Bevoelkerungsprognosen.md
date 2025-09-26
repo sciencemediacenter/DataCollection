@@ -4,7 +4,7 @@
 
 The data set contain selected data from the population scenarios of the [Population Division of the UN](https://population.un.org/wpp/) (all scenarios with the prefix 'UN') and the [Wittgenstein Centre for Demography and Global Human Capital](https://dataexplorer.wittgensteincentre.org) (all scenarios with the prefix 'WCDE'), the scenarios of the Wittgenstein data refer directly to the Shared Socioeconomic Pathways (SSP).
 
-The data set contains two tables. `data_bevoelkerung_bevoelkerungsprognosen` summarizes the population forecasts of the UN and the WCDE for countries and regions. It also contains old forecasts. The variable Revision indicates the version of the respective date. Other key variables are the fertility rate (TFR), net migration (NetMigration) and life expectancy (LEx). The table data_population_age_distribution contains the age distribution of different countries and regions for different scenarios of the UN data. A documentation of all data and further variables can be found on the pages of the data providers.
+The data set contains two tables. `data_bevoelkerung_bevoelkerungsprognosen` summarizes the population forecasts of the UN and the WCDE for countries and regions. It also contains old forecasts. The variable Revision indicates the version of the respective date. Other key variables are the fertility rate (TFR), net migration (NetMigration) and life expectancy (LEx). The table `data_bevoelkerung_altersverteilung` contains the age distribution of different countries and regions for different scenarios of the UN data. A documentation of all data and further variables can be found on the pages of the data providers.
 
 In the Wittgenstein data, absolute figures such as net migration are sometimes given as a total over five years. This must be taken into account when comparing the figures.
 
@@ -166,6 +166,6 @@ altersverteilung <-
 
 ## Licence
 
-Wittgenstein Centre for Demography and Global Human Capital, (2018). Wittgenstein Centre Data Explorer 
-United Nations, made available under a Creative Commons license [CC BY 3.0 IGO](http://creativecommons.org/licenses/by/3.0/igo/)
+- [Wittgenstein Centre Human Capital Data Explorer](https://dataexplorer.wittgensteincentre.org/wcde-v3/), made available under a Creative Commons license [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/#_blank)
+- United Nations, made available under a Creative Commons license [CC BY 3.0 IGO](http://creativecommons.org/licenses/by/3.0/igo/)
 
