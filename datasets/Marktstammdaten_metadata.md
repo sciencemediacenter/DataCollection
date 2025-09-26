@@ -23,9 +23,123 @@ Folgende Tabellen sind relevant:
 
 Sie können alle über die MastrNummer miteinander verknüpft werden.
 
-### data_marktstammdaten_einheiten_wind
+**Field ID:** einheiten_wind
 
 Diese Tabelle enthält die kompletten Daten aus der `EinheitenWind.xml` aus dem Marktstammdatenregister. Hier sind alle Grundinformationen zu den Windkraftanlagen enthalten.
+
+```JSON
+      {
+        "Adresszusatz": null,
+        "AnlagenbetreiberMastrNummer": "ABR930724592683",
+        "AnschlussAnHoechstOderHochSpannung": null,
+        "AuflageAbschaltungLeistungsbegrenzung": false,
+        "AuflagenAbschaltungEiswurf": null,
+        "AuflagenAbschaltungSchallimmissionsschutzNachts": null,
+        "AuflagenAbschaltungSchallimmissionsschutzTagsueber": null,
+        "AuflagenAbschaltungSchattenwurf": null,
+        "AuflagenAbschaltungSonstige": null,
+        "AuflagenAbschaltungTierschutz": null,
+        "Breitengrad": 53.77246,
+        "Bruttoleistung": 2000,
+        "Buergerenergie": null,
+        "Bundesland": "Niedersachsen",
+        "ClusterNordsee": null,
+        "ClusterOstsee": null,
+        "DatumBeginnVoruebergehendeStilllegung": null,
+        "DatumDesBetreiberwechsels": "2022-01-01",
+        "DatumEndgueltigeStilllegung": null,
+        "DatumLetzteAktualisierung": "2024-12-18T13:02:13",
+        "DatumRegistrierungDesBetreiberwechsels": "2022-02-07",
+        "DatumWiederaufnahmeBetrieb": null,
+        "EegMaStRNummer": "EEG955202657340",
+        "EinheitBetriebsstatus": "In Betrieb",
+        "EinheitMastrNummer": "SEE959065500263",
+        "EinheitSystemstatus": "Aktiviert",
+        "Einsatzverantwortlicher": null,
+        "Einspeisungsart": "Volleinspeisung",
+        "Energietraeger": "Wind",
+        "FernsteuerbarkeitDv": true,
+        "FernsteuerbarkeitNb": true,
+        "FlurFlurstuecknummern": null,
+        "Gemarkung": null,
+        "Gemeinde": "Bülkau",
+        "Gemeindeschluessel": "03352008",
+        "GenMastrNummer": null,
+        "GeplantesInbetriebnahmedatum": null,
+        "Hausnummer": "1",
+        "HausnummerNichtGefunden": true,
+        "Hausnummer_nv": false,
+        "Hersteller": null,
+        "Inbetriebnahmedatum": "2009-12-18",
+        "Kraftwerksnummer": null,
+        "Kraftwerksnummer_nv": false,
+        "Kuestenentfernung": null,
+        "Laengengrad": 8.96722,
+        "Lage": "Windkraft an Land",
+        "Land": "Deutschland",
+        "Landkreis": "Cuxhaven",
+        "LokationMaStRNummer": "SEL997961869244",
+        "Nabenhoehe": 60,
+        "Nachtkennzeichnung": false,
+        "NameStromerzeugungseinheit": "Windpark Bülkau WEA01",
+        "NameWindpark": "Windpark Bülkau WEA01",
+        "Nettonennleistung": 2000,
+        "NetzbetreiberpruefungDatum": null,
+        "NetzbetreiberpruefungStatus": null,
+        "NichtVorhandenInMigriertenEinheiten": false,
+        "Ort": "Bülkau",
+        "Postleitzahl": "21782",
+        "Registrierungsdatum": "2019-07-04",
+        "Rotorblattenteisungssystem": null,
+        "Rotordurchmesser": 80,
+        "Seelage": null,
+        "Strasse": "Sprenge",
+        "StrasseNichtGefunden": true,
+        "Technologie": "Horizontalläufer",
+        "Typenbezeichnung": null,
+        "Wassertiefe": null,
+        "Weic": null,
+        "WeicDisplayName": null,
+        "Weic_nv": false
+      }
+```
+**Field ID:**  einheiten_genehmigung
+
+Diese Tabelle enthält die kompletten Daten aus der `EinheitenGenehmigung.xml` aus dem Marktstammdatenregister. Hier sind Genehmigungen für mehrere Einheiten zusammengefasst. In dieser Version entspricht jede Zeile einer Einheit.
+
+```JSON
+      {
+        "Aktenzeichen": "20.053.00/15/8.6.3.2V/RO",
+        "Art": "nach BImSchG i.V.m 4. BImSchV",
+        "Behoerde": "Landesamt für Umwelt Abt. Technischer Umweltschutz 1",
+        "Datum": "2016-03-22",
+        "DatumLetzteAktualisierung": "2019-04-16T08:26:21",
+        "Frist": "2019-03-22",
+        "Frist_nv": false,
+        "GenMastrNummer": "SGE928942899189",
+        "Registrierungsdatum": "2019-04-16",
+        "VerknuepfteEinheitenMaStRNummer": "SEE984539762403",
+        "VerknuepfteEinheitenMaStRNummern": "SEE932627216291, SEE984539762403",
+        "WasserrechtAblaufdatum": null,
+        "WasserrechtAblaufdatum_nv": false,
+        "WasserrechtsNummer": null
+      }
+```
+
+**Field ID:** tenders_bnetza
+
+Diese Tabelle sind die Daten zu den Ausschreibungen der Bundesnetzagentur enthalten. Diese werden aus den von der Bundesnetzargentur veröffentlichten [.csv Dateien](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html){target="_blank"} extrahiert.
+
+
+```JSON
+      {
+        "Ausschreibungsdatum_BNetzA": "2023-05-01",
+        "Ausschreibungsnummer_BNetzA": "WIN23-2",
+        "MastrNummer": "SEE948195399038"
+      },
+```
+
+## Example Query
 
 ```GraphQL
 query MyQuery {
@@ -106,84 +220,6 @@ query MyQuery {
 }
 ```
 
-```JSON
-      {
-        "Adresszusatz": null,
-        "AnlagenbetreiberMastrNummer": "ABR930724592683",
-        "AnschlussAnHoechstOderHochSpannung": null,
-        "AuflageAbschaltungLeistungsbegrenzung": false,
-        "AuflagenAbschaltungEiswurf": null,
-        "AuflagenAbschaltungSchallimmissionsschutzNachts": null,
-        "AuflagenAbschaltungSchallimmissionsschutzTagsueber": null,
-        "AuflagenAbschaltungSchattenwurf": null,
-        "AuflagenAbschaltungSonstige": null,
-        "AuflagenAbschaltungTierschutz": null,
-        "Breitengrad": 53.77246,
-        "Bruttoleistung": 2000,
-        "Buergerenergie": null,
-        "Bundesland": "Niedersachsen",
-        "ClusterNordsee": null,
-        "ClusterOstsee": null,
-        "DatumBeginnVoruebergehendeStilllegung": null,
-        "DatumDesBetreiberwechsels": "2022-01-01",
-        "DatumEndgueltigeStilllegung": null,
-        "DatumLetzteAktualisierung": "2024-12-18T13:02:13",
-        "DatumRegistrierungDesBetreiberwechsels": "2022-02-07",
-        "DatumWiederaufnahmeBetrieb": null,
-        "EegMaStRNummer": "EEG955202657340",
-        "EinheitBetriebsstatus": "In Betrieb",
-        "EinheitMastrNummer": "SEE959065500263",
-        "EinheitSystemstatus": "Aktiviert",
-        "Einsatzverantwortlicher": null,
-        "Einspeisungsart": "Volleinspeisung",
-        "Energietraeger": "Wind",
-        "FernsteuerbarkeitDv": true,
-        "FernsteuerbarkeitNb": true,
-        "FlurFlurstuecknummern": null,
-        "Gemarkung": null,
-        "Gemeinde": "Bülkau",
-        "Gemeindeschluessel": "03352008",
-        "GenMastrNummer": null,
-        "GeplantesInbetriebnahmedatum": null,
-        "Hausnummer": "1",
-        "HausnummerNichtGefunden": true,
-        "Hausnummer_nv": false,
-        "Hersteller": null,
-        "Inbetriebnahmedatum": "2009-12-18",
-        "Kraftwerksnummer": null,
-        "Kraftwerksnummer_nv": false,
-        "Kuestenentfernung": null,
-        "Laengengrad": 8.96722,
-        "Lage": "Windkraft an Land",
-        "Land": "Deutschland",
-        "Landkreis": "Cuxhaven",
-        "LokationMaStRNummer": "SEL997961869244",
-        "Nabenhoehe": 60,
-        "Nachtkennzeichnung": false,
-        "NameStromerzeugungseinheit": "Windpark Bülkau WEA01",
-        "NameWindpark": "Windpark Bülkau WEA01",
-        "Nettonennleistung": 2000,
-        "NetzbetreiberpruefungDatum": null,
-        "NetzbetreiberpruefungStatus": null,
-        "NichtVorhandenInMigriertenEinheiten": false,
-        "Ort": "Bülkau",
-        "Postleitzahl": "21782",
-        "Registrierungsdatum": "2019-07-04",
-        "Rotorblattenteisungssystem": null,
-        "Rotordurchmesser": 80,
-        "Seelage": null,
-        "Strasse": "Sprenge",
-        "StrasseNichtGefunden": true,
-        "Technologie": "Horizontalläufer",
-        "Typenbezeichnung": null,
-        "Wassertiefe": null,
-        "Weic": null,
-        "WeicDisplayName": null,
-        "Weic_nv": false
-      }
-```
-### data_marktstammdaten_permits_units
-Diese Tabelle enthält die kompletten Daten aus der `EinheitenWind.xml` aus dem Marktstammdatenregister. Hier sind Genehmigungen für mehrere Einheiten zusammengefasst. In dieser Version entspricht jede Zeile einer Einheit.
 
 ```GraphQL
 query MyQuery {
@@ -207,29 +243,6 @@ query MyQuery {
 
 ```
 
-
-```JSON
-      {
-        "Aktenzeichen": "20.053.00/15/8.6.3.2V/RO",
-        "Art": "nach BImSchG i.V.m 4. BImSchV",
-        "Behoerde": "Landesamt für Umwelt Abt. Technischer Umweltschutz 1",
-        "Datum": "2016-03-22",
-        "DatumLetzteAktualisierung": "2019-04-16T08:26:21",
-        "Frist": "2019-03-22",
-        "Frist_nv": false,
-        "GenMastrNummer": "SGE928942899189",
-        "Registrierungsdatum": "2019-04-16",
-        "VerknuepfteEinheitenMaStRNummer": "SEE984539762403",
-        "VerknuepfteEinheitenMaStRNummern": "SEE932627216291, SEE984539762403",
-        "WasserrechtAblaufdatum": null,
-        "WasserrechtAblaufdatum_nv": false,
-        "WasserrechtsNummer": null
-      }
-```
-
-### data_marktstammdaten_tenders_bnetza
-Diese Tabelle sind die Daten zu den Ausschreibungen der Bundesnetzagentur enthalten. Diese werden aus den von der Bundesnetzargentur veröffentlichten [.csv Dateien](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html){target="_blank"} extrahiert.
-
 ```GraphQL
 query MyQuery {
   ds_marktstammdaten_tenders_bnetza {
@@ -239,23 +252,15 @@ query MyQuery {
   }
 }
 ```
-```JSON
-      {
-        "Ausschreibungsdatum_BNetzA": "2023-05-01",
-        "Ausschreibungsnummer_BNetzA": "WIN23-2",
-        "MastrNummer": "SEE948195399038"
-      },
-```
 
-## Example: R Code
 ```R
 devtools::install_github("sciencemediacenter/SMChelpR", ref = "master")
 library(SMChelpR)
 
 server_url <- "https://data.smclab.io/v1/graphql"
 db_prefix <- "data_" 
-# EinheitenWind
 
+# EinheitenWind
 wind_extended <-
   # marktstammdaten_einheiten_wind
   GraphQL_get_table_vec(
@@ -339,3 +344,7 @@ wind_extended <-
     by = "MastrNummer"
   )
 ```
+
+## Licence
+
+The data obtained via [Marktstammdatenregister](https://www.marktstammdatenregister.de/MaStR/Datendownload) are licensed under [Datenlizenz Deutschland – Namensnennung – Version 2.0](https://www.govdata.de/dl-de/by-2-0).
