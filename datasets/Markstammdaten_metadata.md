@@ -1,10 +1,10 @@
-# Dataset: Windkraft an Land
+# Dataset: Martkstammdaten
 
 
 ## About <a name = "about"></a>
 Der Datensatz dient unter anderem als Grundlage für den [Data Report "Das Wind-Ausbauziel für 2024"](https://www.sciencemediacenter.de/alle-angebote/data-report/details/news/das-wind-ausbauziel-fuer-2024/). Er besteht zum einen Teil aus Daten des [Marktstammdatenregisters](https://www.marktstammdatenregister.de/MaStR) und zum anderen Teil aus
 den [Ausschreibungsergebnissen](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html) der Bundesnetzagentur. 
-Das Marktstammdatenregister ist eine von der Bundesnetzagentur geführte Datenbank zur Erfassung und Verwaltung von Informationen über alle Akteure und Anlagen im deutschen Strom- und Gasmarkt. Die Einträge erfolgen dabei von den Akteuren und Anlagenbetreibern in Eigenverantwortung selbst. Der Zugriff auf die Daten des Marktstammdatenregisters erfolgt über das [open MaStR Paket](https://github.com/OpenEnergyPlatform/open-MaStR) des Rainer Lemoine Instituts. Unsere Abbild wird unregelmäßig aktualisiert. Die Daten zu den Ausschreibungsergebnissen werden aus den von der Bundesnetzargentur veröffentlichten [.csv Dateien](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html) extrahiert. Die Daten werden immer nach bekanntgabe der Zuschläge aktualisiert.
+Das Marktstammdatenregister ist eine von der Bundesnetzagentur geführte Datenbank zur Erfassung und Verwaltung von Informationen über alle Akteure und Anlagen im deutschen Strom- und Gasmarkt. Die Einträge erfolgen dabei von den Akteuren und Anlagenbetreibern in Eigenverantwortung selbst. Der Zugriff auf die Daten des Marktstammdatenregisters erfolgt über den Gesamtdatenexport, der täglich aktualisiert wird. Die Daten zu den Ausschreibungsergebnissen werden aus den von der Bundesnetzargentur veröffentlichten [.csv Dateien](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Wind_Onshore/BeendeteAusschreibungen/start.html) extrahiert. Die Daten werden immer nach bekanntgabe der Zuschläge aktualisiert.
 
 
 ## Access <a name = "access"></a>
@@ -12,8 +12,10 @@ For a general overview of how to query the data, you can find help [here](../REA
 
 ## Field and variables
 Folgende Tabellen sind relevant:
-- data_marktstammdaten_wind_extended
-- data_marktstammdaten_permits_units
+- data_marktstammdaten_einheiten_genehmigung
+- data_marktstammdaten_einheiten_wind
+- data_marktstammdaten_wind_extended (deprecated)
+- data_marktstammdaten_permits_units (deprecated)
 - data_marktstammdaten_tenders_bnetza
 - data_marktstammdaten_tenders_eeg
 

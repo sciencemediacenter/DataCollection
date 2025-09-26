@@ -66,7 +66,7 @@ Or just simply search for a "graphql playground" in your favorite search engine.
 * [Energy charts data](datasets/Energy_charts_metadata.md)
 * [NRW hospital planning](datasets/NRW_krankenhausreform_metadata.md)
 * [Population forecasts](datasets/Bevoelkerungsprognosen_metadata.md)
-* [Windkraft an Land](datasets/Windkraft_metadata.md)
+* [Marktstammdaten](datasets/Marktstammdaten_metadata.md)
 * [World Bank Development Indicators](datasets/world_development_indicators_metadata.md)
 * [ENTSO-E Stromdaten](datasets/ENTSOE_stromdaten_metadata.md)
 * [Preprint Recommender](datasets/Preprint_recommender_metadata.md)
