@@ -22,7 +22,8 @@
 
 ## About <a name = "about"></a>
 
-This dataset contains the basic metadata  and content for all stories of the Science Media Center.
+This dataset contains the basic metadata and content for all stories of the Science Media Center.
+
 ## Access <a name = "access"></a>
 
 For a general overview of how to query the data, you can find help [here](../README.md)
@@ -138,6 +139,26 @@ query SearchQuery {
     }
   }
 }
+```
+
+
+```R
+devtools::install_github("sciencemediacenter/SMChelpR", ref = "master")
+library(SMChelpR)
+
+smc_story_meta <-
+  GraphQL_get_table_vec(
+    tabellenname = "smc_story_meta",
+    variablen = c(
+      "story_no",
+      "title",
+      "type",
+      "url",
+      "ressort",
+      "publication_date"
+    ),
+    datenserver = "https://data.smclab.io/v1/graphql"
+  )
 ```
 
 ## Licence
