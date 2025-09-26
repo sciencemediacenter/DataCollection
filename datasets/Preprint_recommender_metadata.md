@@ -11,6 +11,10 @@ The dataset contains four tables.
 * **biomedrxiv_earlyuserstats** contains usage statistics for the first seven days after the release of the first version. As a rule, many measurement figures are still missing on the preprint server page on the first two days after publication. Problems in retrieving the data may cause it to change the time of retrieval. Other missing data are not uncommon.
 * **biomedrxiv_thresholds** contains the thresholds recalculated every two months for all retrieval statistics and the first seven days after initial publication. To identify noticeable preprints in the usage statistics, these thresholds can be compared with the values in biomedrxiv_earlyuserstats. The threshold calculation will be further optimized so that these values can also change subsequently.
 * **biomedrxiv_recommendations** contains the meta-information on the preprints that became noticeable in the recommender. The data set is not always systematically updated when the recommending method is changed. It is not suitable as a research dataset, but it provides an overview of conspicuous preprints over time and is updated several times a day. Preprints are contained multiple times in the data set if several metrics are above the threshold.
+* **osf_earlyuserstats**
+* **osf_version**
+* **recommendations**
+* **thresholds**
 
 The records are updated twice a day.
 
@@ -56,6 +60,7 @@ For a general overview of how to query the data, you can find help [here](../REA
 
 ```JSON
       {
+        "abstract": "...",
         "author_corresponding": "Leila Wehbe",
         "author_corresponding_institution": "Carnegie Mellon University",
         "authors": "Wu, S.; Ramdas, A.; Wehbe, L.",
