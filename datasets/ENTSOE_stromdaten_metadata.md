@@ -11,17 +11,6 @@ For a general overview of how to query the data, you can find help [here](../REA
 
 ## Field and variables
 
-**Field ID:** generation
-
-```JSON
-      {
-        "timestamp": "2017-12-04T21:15:00",
-        "generation_type": "Fossil Gas",
-        "generation": 3073,
-        "consumption": 1
-      }
-```
-
 **Field ID:** load
 
 ```JSON
@@ -30,6 +19,19 @@ For a general overview of how to query the data, you can find help [here](../REA
         "timestamp": "2015-12-17T20:15:00"
       }
 ```
+
+**Field ID:** generation
+
+```JSON
+      {
+        "consumption": 0,
+        "generation": 15859,
+        "generation_type": "Fossil Brown coal/Lignite",
+        "timestamp": "2014-12-31T23:00:00"
+      }
+```
+
+
 
 ## Example Query
 
@@ -44,11 +46,11 @@ query MyQuery {
 
 ```GraphQL
 query MyQuery {
-   data_entsoe_stromdaten_generation(order_by: {timestamp: desc}, limit: 10) {
-    timestamp
-    generation_type
-    generation
+  data_entsoe_stromdaten_generation {
     consumption
+    generation
+    generation_type
+    timestamp
   }
 }
 ```
