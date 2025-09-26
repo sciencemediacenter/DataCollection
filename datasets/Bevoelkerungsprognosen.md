@@ -19,47 +19,54 @@ For a general overview of how to query the data, you can find help [here](../REA
 
 ```JSON
       {
-        "Variant": "Low",
-        "TimePeriod_TFR": null,
-        "Time": 2071,
-        "TPopulation1July": 367492.1,
-        "TFR": null,
-        "Szenario": "UN Low",
-        "Revision": "2019",
-        "Organisation": "UN World Population Prospects",
-        "NetMigrations": null,
-        "Location": "Northern Africa",
-        "LocID": 912,
-        "Land": "Nordafrika",
-        "LEx": null,
+        "ISO2_code": null,
         "ISO3_code": null,
-        "ISO2_code": null
+        "Kontinent": "Ozeanien",
+        "LEx": null,
+        "Land": "Australien",
+        "LocID": 36,
+        "Location": "Australia",
+        "Location_Type": "Country/Area",
+        "NetMigrations": null,
+        "Organisation": "UN World Population Prospects",
+        "Revision": "2019",
+        "SDG_Region": "Australien/Neuseeland",
+        "Subregion": "Australien/Neuseeland",
+        "Szenario": "UN No change",
+        "TFR": null,
+        "TPopulation1July": 37848.1,
+        "Time": 2079,
+        "TimePeriod_TFR": null,
+        "Variant": "No change"
       }
 ```
 
 **Field ID:** data_bevoelkerung_altersverteilung
 ```JSON
       {
-        "AgeGrp": "0-4",
-        "AgeGrpSpan": 5,
-        "AgeGrpStart": 0,
-        "ISO2_code": null,
-        "ISO3_code": null,
-        "Land": "Welt",
-        "LocID": 900,
-        "LocTypeID": 1,
-        "LocTypeName": "World",
-        "Location": "World",
-        "MidPeriod": 1950,
+        "AgeGrp": "30-34",
+        "AgeGrpSpan": null,
+        "AgeGrpStart": null,
+        "ISO2_code": "DE",
+        "ISO3_code": "DEU",
+        "Kontinent": "Europa",
+        "Land": "Deutschland",
+        "LocID": 276,
+        "LocTypeID": 4,
+        "LocTypeName": "Country/Area",
+        "Location": "Germany",
+        "MidPeriod": 1951,
         "Notes": null,
-        "ParentID": 0,
-        "PopFemale": 6.691,
-        "PopMale": 6.988,
-        "PopTotal": 13.679,
-        "SDMX_code": 1,
-        "SortOrder": 1,
+        "ParentID": 926,
+        "PopFemale": 2252.444,
+        "PopMale": 1522.8435,
+        "PopTotal": 3775.2876,
+        "SDG_Region": "Europa und Nordamerika",
+        "SDMX_code": 276,
+        "SortOrder": null,
+        "Subregion": "Westeuropa",
         "Szenario": "UN Medium",
-        "Time": 1950,
+        "Time": 1951,
         "VarID": 2,
         "Variant": "Medium"
       }
@@ -70,23 +77,28 @@ For a general overview of how to query the data, you can find help [here](../REA
 ```GraphQL
 query MyQuery {
   data_bevoelkerung_bevoelkerungsprognosen {
-    Variant
-    TimePeriod_TFR
-    Time
-    TPopulation1July
-    TFR
-    Szenario
-    Revision
-    Organisation
-    NetMigrations
-    Location
-    LocID
-    Land
-    LEx
-    ISO3_code
     ISO2_code
+    ISO3_code
+    Kontinent
+    LEx
+    Land
+    LocID
+    Location
+    Location_Type
+    NetMigrations
+    Organisation
+    Revision
+    SDG_Region
+    Subregion
+    Szenario
+    TFR
+    TPopulation1July
+    Time
+    TimePeriod_TFR
+    Variant
   }
 }
+
 ```
 
 ```GraphQL
@@ -97,6 +109,7 @@ query MyQuery {
     AgeGrpStart
     ISO2_code
     ISO3_code
+    Kontinent
     Land
     LocID
     LocTypeID
@@ -108,8 +121,10 @@ query MyQuery {
     PopFemale
     PopMale
     PopTotal
+    SDG_Region
     SDMX_code
     SortOrder
+    Subregion
     Szenario
     Time
     VarID
