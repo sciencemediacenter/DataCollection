@@ -62,6 +62,47 @@ The ressorts are:
 To use the ressorts within a query you need to use the german terms. 
 
 
+Information on type (in german)
+
+### Data & Facts
+
+* **Data Report**
+  Sind datenbasierte Hintergrundinformationen zu aktuellen Themen. Beispielsweise haben wir während der Corona-Pandemie regelmäßig einen Corona-Report veröffentlicht, in dem wir das aktuelle Corona-Geschehen anhand relevanter Kennzahlen zusammengefasst haben.
+
+  
+* **Fact Sheet**
+  Hier versorgen wir Journalist:innen mit Hintergrundinformationen, Faktensammlungen und Spickzetteln: wertvolle Expertise bei unübersichtlichen oder komplexen Themen. Zu Themen, die in den Medien noch wenig beachtet werden oder plötzlich in die Schlagzeilen geraten, gibt es außerdem prägnante Übersichten, Zusammenfassungen und Link-Listen. Informationen in den Fact Sheets gehen bei Großlage-Themen in die Tiefe und geben bei übergreifenden Themen wie Klimaschutz oder Grüne Gentechnik relevantes Überblickswissen.
+
+  
+* **Living Fact Sheet**
+  Diese Fact Sheets werden regelmäßig von unserer Redaktion kuratiert und aktualisiert. 
+
+  Ein Living Fact Sheet zum Thema Plastik kannst du [hier](https://livingfactsheets.smc.page/problemfelder-plastik) aufrufen.
+
+Fact Sheets und Data Reports findest du [hier auf unserer Website](https://www.sciencemediacenter.de/angebote?story_type=Data+%26+Facts).
+
+### **Press Briefings**
+
+Zu ausgesuchten Themen veranstaltet das SMC Press Briefings, die den Journalist:innen direkten Zugang zu Wissenschaftlern verschaffen. Seit der Pandemie finden unsere Press Briefings ausschließlich online statt, in einer 50-minütigen Konferenz können die Journalist:innen ihre Fragen an Forschende stellen.
+
+Unsere Press Briefings findest du [hier auf unserer Website](https://www.sciencemediacenter.de/angebote?story_type=Press+Briefing).
+
+### Statements
+
+* **Rapid Reaction**
+
+  Wenn Wissenschaft Schlagzeilen verspricht, müssen Journalist:innen in kürzester Zeit reagieren. Unsere Redaktion organisiert zeitnah Einschätzungen und Zitate ausgewiesener Experten und stellt dieses Wissen als journalistischen Rohstoff zur Verfügung. Die Rapid Reaction vermittelt Fakten und Argumente aus unterschiedlichen Blickwinkeln, ist Quelle verlässlicher Zitate und bildet die Basis weitergehender eigener Recherchen.
+
+  
+* **Research in Context**
+
+  Wissenschaftliche Forschungsergebnisse stehen Wissenschaftsjournalist:innen gewöhnlich bereits vor der Veröffentlichung der Fachpublikation zur Verfügung – allerdings unter Sperrfrist. Diese Zeit nutzt auch das SMC, um von Expert:innen Einschätzungen darüber einzuholen, wie eine Studie fachlich und methodisch einzuordnen ist. Bei dieser Art von „Pre Publication Peer Review“ liefern die beteiligten Expert:innen noch vor Ablauf der Sperrfrist Kurzkommentare und Einschätzungen, die das SMC akkreditierten Journalist:innen wiederum in Form des Produkts „Research in Context“ liefert. Und zwar genau dann, wenn Redaktionen ihre Medienberichte anfertigen.
+* **Science Reponse**
+
+  Wissenschaft antwortet dem SMC auf proaktive Fragen zu Themen, die in der Luft liegen, aber noch keine Schlagzeilen machen: Expertise, die den Blick auf öffentliche Angelegenheiten weitet. Im Gegensatz zu unseren anderen Statement-Produkten (Rapid Reaction und Research in Context) werden Science Response-Aussendungen unsere Fragen an die Expert:innen mitausgespielt. 
+
+  Ein Beispiel für eine Science Response kannst du [hier auf hier auf unserer Website](https://www.sciencemediacenter.de/angebote/diskurs-meta-analysen-zu-absetzsymptomen-von-antidepressiva-25131) nachlesen.
+
 **Field ID:** smc_story_expert_statements
 
 ```JSON
